@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char courseChoice;
+    
+    printf("Which course are you enrolled in, COMP500 (C) or ENSE501 (E)?\n\n");
+
+    scanf(" %c", &courseChoice);
+
+    if (courseChoice == 'C' || courseChoice == 'c') {
+        printf("The user is enrolled in COMP500 \n");
+    } else if (courseChoice == 'E' || courseChoice == 'e') {
+        printf("The user is enrolled in ENSE501 \n");
+    } else {
+        printf("Invalid response!\n");
+    }
+
+    return 0;
+}
