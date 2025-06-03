@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float percentage;
+
+    printf("Please enter your Practical Test 1 percentage:\n");
+    scanf("%f", &percentage);
+
+    if (percentage >= 90.0) {
+        printf("%.6f%% is a 'A+'\n", percentage);
+    } else if (percentage >= 85.0) {
+        printf("%.6f%% is a 'A'\n", percentage);
+    } else if (percentage >= 80.0) {
+        printf("%.6f%% is a 'A-'\n", percentage);
+    } else if (percentage >= 75.0) {
+        printf("%.6f%% is a 'B+'\n", percentage);
+    } else if (percentage >= 70.0) {
+        printf("%.6f%% is a 'B'\n", percentage);
+    } else if (percentage >= 65.0) {
+        printf("%.6f%% is a 'B-'\n", percentage);
+    } else if (percentage >= 60.0) {
+        printf("%.6f%% is a 'C+'\n", percentage);
+    } else if (percentage >= 55.0) {
+        printf("%.6f%% is a 'C'\n", percentage);
+    } else if (percentage >= 50.0) {
+        printf("%.6f%% is a 'C-'\n", percentage);
+    } else {
+        printf("%.6f%% is a 'D'\n", percentage);
+    }
+
+    return 0;
+}
