@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    char inputChar;
+
+    printf("Input a character:\n");
+    scanf(" %c", &inputChar); 
+    
+    if ((inputChar >= 'A' && inputChar <= 'Z') || (inputChar >= 'a' && inputChar <= 'z')) {
+        printf("The input was alphabetic.\n");
+    } else {
+        printf("The input was not alphabetic.\n");
+    }
+
+    return 0;
+}
