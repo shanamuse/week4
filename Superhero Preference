@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char superhero;
+
+    printf("Which hero is your favourite, Superman (S) or Batman (B)?\n");
+    scanf(" %c", &superhero);  
+    
+    if (superhero == 'S' || superhero == 's') {
+        printf("The user's favourite super hero is Superman\n");
+    } else if (superhero == 'B' || superhero == 'b') {
+        printf("The user's favourite super hero is Batman\n");
+    } else {
+        printf("Invalid response!\n");
+    }
+
+    return 0;
+}
