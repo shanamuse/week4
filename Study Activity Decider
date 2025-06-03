@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    float score;
+    char journalSubmitted;
+
+    printf("What did you score in Practical Test 1?\n");
+    scanf("%f", &score);
+
+    printf("Did you submit Reporting Journal - Stage 1 (y/n)?\n");
+    scanf(" %c", &journalSubmitted);
+
+    if (score < 50.0) {
+        if (journalSubmitted == 'y' || journalSubmitted == 'Y') {
+            printf("\nPractice more programming exercises!\n");
+        } else if (journalSubmitted == 'n' || journalSubmitted == 'N') {
+            printf("\nMore practice and keep a journal!!!\n");
+        }
+    } else {
+        if (journalSubmitted == 'y' || journalSubmitted == 'Y') {
+            printf("\nWell done! Keep studying well...\n");
+        } else if (journalSubmitted == 'n' || journalSubmitted == 'N') {
+            printf("\nOh no, you should keep a journal!\n");
+        }
+    }
+
+    return 0;
+}
