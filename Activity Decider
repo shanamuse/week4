@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char temperature;
+    char humidity;
+
+    printf("Is the temperature warm or cold (w/c)?\n");
+    scanf(" %c", &temperature);
+
+    printf("Is it dry or humid (d/h)?\n");
+    scanf(" %c", &humidity);
+
+    if (temperature == 'w' || temperature == 'W') {
+        if (humidity == 'd' || humidity == 'D') {
+            printf("\nYou should play tennis.\n");
+        } else if (humidity == 'h' || humidity == 'H') {
+            printf("\nYou should go swimming.\n");
+        }
+    } else if (temperature == 'c' || temperature == 'C') {
+        if (humidity == 'd' || humidity == 'D') {
+            printf("\nYou should study Programming 1.\n");
+        } else if (humidity == 'h' || humidity == 'H') {
+            printf("\nYou should read a book.\n");
+        }
+    }
+
+    return 0;
+}
