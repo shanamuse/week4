@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    char health;
+    char location;
+
+    printf("Is the player's health low or high (l/h)?\n");
+    scanf(" %c", &health);
+
+    printf("Where is the player, close or far (c/f)?\n");
+    scanf(" %c", &location);
+
+    if (health == 'h' || health == 'H') {
+        if (location == 'c' || location == 'C') {
+            printf("\nThe AI should call for reinforcements.\n");
+        } else if (location == 'f' || location == 'F') {
+            printf("\nThe AI should go to sleep.\n");
+        }
+    } else if (health == 'l' || health == 'L') {
+        if (location == 'c' || location == 'C') {
+            printf("\nThe AI should attack.\n");
+        } else if (location == 'f' || location == 'F') {
+            printf("\nThe AI should start searching.\n");
+        }
+    }
+
+    return 0;
+}
