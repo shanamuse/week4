@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    float leftOperand, rightOperand, result;
+    char operation;
+
+    printf("Input left operand?\n");
+    scanf("%f", &leftOperand);
+
+    printf("Input right operand?\n");
+    scanf("%f", &rightOperand);
+
+    printf("Operation (+,-,*,/)?\n");
+    scanf(" %c", &operation);  
+
+    if (operation == '+') {
+        result = leftOperand + rightOperand;
+        printf("The result is\n%g\n", result);
+    } else if (operation == '-') {
+        result = leftOperand - rightOperand;
+        printf("The result is\n%g\n", result);
+    } else if (operation == '*') {
+        result = leftOperand * rightOperand;
+        printf("The result is\n%g\n", result);
+    } else if (operation == '/') {
+        if (rightOperand == 0) {
+            printf("Error: Division by zero is not allowed.\n");
+        } else {
+            result = leftOperand / rightOperand;
+            printf("The result is\n%g\n", result);
+        }
+    } else {
+        printf("Invalid operation selected.\n");
+    }
+
+    return 0;
+}
