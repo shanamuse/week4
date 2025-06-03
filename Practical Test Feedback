@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char testResult;
+
+    printf("Did you score more than 50%% in Practical Test 1 (y/n)?\n");
+    scanf(" %c", &testResult); 
+    
+    if (testResult == 'y' || testResult == 'Y') {
+        printf("Great! Hope you score well in Practical Test 2!\n");
+    } else if (testResult == 'n' || testResult == 'N') {
+        printf("Oh no! Hopefully your Practical Test 2 result is better!\n");
+    } else {
+        printf("Your response makes no sense!\n");
+    }
+
+    return 0;
+}
