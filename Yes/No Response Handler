@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char response;
+
+    printf("Question (Y/N)?\n");
+    printf("User response: ");
+    scanf(" %c", &response);  
+
+    if (response == 'Y' || response == 'y') {
+        printf("Yes\n");
+    } else if (response == 'N' || response == 'n') {
+        printf("No\n");
+    } else {
+        printf("Invalid input!\n");
+    }
+
+    return 0;
+}
