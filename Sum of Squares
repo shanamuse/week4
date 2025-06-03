@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int x, y, z;
+    int a, b, c, sum;
+
+    printf("x:\n");
+    scanf("%d", &x);
+
+    printf("y:\n");
+    scanf("%d", &y);
+
+    printf("z:\n");
+    scanf("%d", &z);
+
+    a = x * x;
+    b = y * y;
+    c = z * z;
+
+    sum = a + b + c;
+
+    printf("Computed: %d\n", sum);
+
+    return 0;
+}
