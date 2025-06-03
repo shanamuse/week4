@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    char userResponse;
+
+    printf("Are you enjoying the COMP500/ENSE501 labs (y/n)?\n");
+    scanf(" %c", &userResponse); 
+
+    if (userResponse == 'y' || userResponse == 'Y') {
+        printf("Great! Keep going this is only week 4!\n");
+    } else if (userResponse == 'n' || userResponse == 'N') {
+        printf("Oh no! Don't worry only eight short weeks to go!\n");
+    } else {
+        printf("Your response makes no sense!\n");
+    }
+
+    return 0;
+}
+
