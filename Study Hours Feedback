@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int studyHours;
+
+    printf("How many hours did you spend studying for the test?\n");
+    scanf("%d", &studyHours);
+
+    if (studyHours < 0) {
+        printf("Invalid, you cannot have studied a negative number of hours!\n");
+    } else if (studyHours <= 25) {
+        printf("%d hours is probably not enough!\n", studyHours);
+    } else if (studyHours <= 39) {
+        printf("Good, but was it enough...\n");
+    } else { 
+        printf("Excellent, you should be well prepared for the test!\n");
+    }
+
+    return 0;
+}
+
