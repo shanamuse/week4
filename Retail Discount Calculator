@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int purchaseAmount;
+    float discountRate, discountValue, finalTotal;
+
+    printf("Input the total purchase price:\n");
+    scanf("%d", &purchaseAmount);
+
+    if (purchaseAmount < 2500) {
+        discountRate = 0.0;
+    } else if (purchaseAmount <= 6499) {
+        discountRate = 0.05;  
+    } else if (purchaseAmount <= 10000) {
+        discountRate = 0.10;  
+    } else {
+        discountRate = 0.125;  
+    }
+
+    discountValue = purchaseAmount * discountRate;
+    finalTotal = purchaseAmount - discountValue;
+
+    printf("Discount is: %.2f\n", discountValue);
+    printf("Payable Total is: %.2f\n", finalTotal);
+
+    return 0;
+}
