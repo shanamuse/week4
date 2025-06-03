@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int firstNumber, secondNumber;
+
+    printf("Please enter a number:\n");
+    scanf("%d", &firstNumber);
+
+    printf("Please enter another number:\n");
+    scanf("%d", &secondNumber);
+
+    if (firstNumber > secondNumber) {
+        printf("%d is bigger than %d.\n", firstNumber, secondNumber);
+    } else if (secondNumber > firstNumber) {
+        printf("%d is bigger than %d.\n", secondNumber, firstNumber);
+    } else {
+        printf("The same number (%d) was entered twice.\n", firstNumber);
+    }
+
+    return 0;
+}
