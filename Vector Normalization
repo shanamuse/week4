@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x, y, z;
+    float length, nx, ny, nz;
+
+    printf("x:\n");
+    scanf("%f", &x);
+
+    printf("y:\n");
+    scanf("%f", &y);
+
+    printf("z:\n");
+    scanf("%f", &z);
+
+    float lengthSquared = x * x + y * y + z * z;
+
+    length = sqrtf(lengthSquared);
+
+    if (length == 0) {
+        printf("Cannot normalize a zero vector.\n");
+    } else {
+        nx = x / length;
+        ny = y / length;
+        nz = z / length;
+
+        printf("Normalised: %.6f, %.6f, %.6f\n", nx, ny, nz);
+    }
+
+    return 0;
+}
