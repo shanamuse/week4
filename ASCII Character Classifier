@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    char inputChar;
+    int asciiValue;
+
+    printf("Input a character:\n");
+    scanf(" %c", &inputChar);
+
+    asciiValue = (int)inputChar;
+
+    if ((asciiValue >= 0 && asciiValue <= 31) || asciiValue == 127) {
+        printf("Input is Non-printable.\n");
+    } else if (asciiValue == 32) {
+        printf("Input is Space.\n");
+    } else if ((asciiValue >= 33 && asciiValue <= 47) || 
+               (asciiValue >= 58 && asciiValue <= 64) ||
+               (asciiValue >= 91 && asciiValue <= 96) ||
+               (asciiValue >= 123 && asciiValue <= 126)) {
+        printf("Input is Symbol.\n");
+    } else if (asciiValue >= 48 && asciiValue <= 57) {
+        printf("Input is Digit.\n");
+    } else if (asciiValue >= 65 && asciiValue <= 90) {
+        printf("Input is Uppercase.\n");
+    } else if (asciiValue >= 97 && asciiValue <= 122) {
+        printf("Input is Lowercase.\n");
+    } else {
+        printf("Input is Unknown.\n");
+    }
+
+    return 0;
+}
