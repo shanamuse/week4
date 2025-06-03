@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int income;
+    float taxRate;
+
+    printf("What is your income?\n");
+    scanf("%d", &income);
+
+    if (income <= 14000) {
+        taxRate = 10.5;
+    } else if (income <= 48000) {
+        taxRate = 17.5;
+    } else if (income <= 70000) {
+        taxRate = 30.0;
+    } else {
+        taxRate = 33.0;
+    }
+
+    printf("Tax rate: %.1f%%\n", taxRate);
+
+    return 0;
+}
